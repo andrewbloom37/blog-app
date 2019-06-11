@@ -1,45 +1,34 @@
-.idea
-**/.firebaserc
+# The directory Mix will write compiled artifacts to.
+/_build/
 
-.runtimeconfig.json
-.firebase/
+# If you run "mix test --cover", coverage assets end up here.
+/cover/
 
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# The directory Mix downloads your dependencies sources to.
+/deps/
 
-# Test binary, built with `go test -c`
-*.test
-*.out
-/vendor/
-/Godeps/
+# Where 3rd-party dependencies like ExDoc output generated docs.
+/doc/
 
-.DS_Store
-.AppleDouble
-.LSOverride
+# Ignore .fetch files in case you like to edit your project deps locally.
+/.fetch
 
-._*
+# If the VM crashes, it generates a dump, let's ignore it too.
+erl_crash.dump
 
-logs
-*.log
-npm-debug.log*
+# Also ignore archive artifacts (built via "mix archive.build").
+*.ez
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+# Ignore package tarball (built via "mix hex.build").
+blogger-*.tar
 
-coverage
+# If NPM crashes, it generates a log, let's ignore it too.
+npm-debug.log
 
-node_modules/
+# The directory NPM downloads your dependencies sources to.
+/assets/node_modules/
 
-.env
-.env.test
-
-.cache
-
-tags
-
+# Since we are building assets from assets/,
+# we ignore priv/static. You may want to comment
+# this depending on your deployment strategy.
+/priv/static/
